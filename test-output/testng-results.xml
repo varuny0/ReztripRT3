@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="5" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Reporter log started]]>
+    </line>
+    <line>
+      <![CDATA[Login was successful. Moving to next step]]>
+    </line>
+  </reporter-output>
+  <suite name="preserve-order Suite" duration-ms="236377" started-at="2020-11-25T10:33:30Z" finished-at="2020-11-25T10:37:26Z">
+    <groups>
+      <group name="SMOKE">
+        <method signature="TC_Admin_Login.test(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="test" class="com.tt.admin.TC_Admin_Login"/>
+        <method signature="TC_Select_Property.selProperty(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Select_Property@192b07fd]" name="selProperty" class="com.tt.admin.TC_Select_Property"/>
+      </group> <!-- SMOKE -->
+    </groups>
+    <test name="tests" duration-ms="236377" started-at="2020-11-25T10:33:30Z" finished-at="2020-11-25T10:37:26Z">
+      <class name="com.tt.admin.TC_Admin_Login">
+        <test-method status="PASS" signature="deleteLog()[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="deleteLog" is-config="true" duration-ms="13" started-at="2020-11-25T16:03:30Z" finished-at="2020-11-25T16:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLog -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="setUp" is-config="true" duration-ms="205" started-at="2020-11-25T16:03:30Z" finished-at="2020-11-25T16:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Beforem(java.lang.String)[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="Beforem" is-config="true" duration-ms="11667" started-at="2020-11-25T16:03:30Z" finished-at="2020-11-25T16:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Reporter log started]]>
+            </line>
+            <line>
+              <![CDATA[Login was successful. Moving to next step]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Beforem -->
+        <test-method status="PASS" signature="test(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="test" duration-ms="9739" started-at="2020-11-25T16:03:43Z" data-provider="dataSupplier" finished-at="2020-11-25T16:03:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=harshini, Password=travel@123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="getResult" is-config="true" duration-ms="420" started-at="2020-11-25T16:03:53Z" finished-at="2020-11-25T16:03:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=TC_Admin_Login.test(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="driverclose()[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="driverclose" is-config="true" duration-ms="1868" started-at="2020-11-25T16:07:25Z" finished-at="2020-11-25T16:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverclose -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tt.admin.TC_Admin_Login@ff5b51f]" name="tearDown" is-config="true" duration-ms="343" started-at="2020-11-25T16:07:27Z" finished-at="2020-11-25T16:07:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tt.admin.TC_Admin_Login -->
+      <class name="com.tt.MB_Test.TC_Mobile_Modify_Email">
+        <test-method status="PASS" signature="Flow(java.util.HashMap)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86]" name="Flow" duration-ms="96196" started-at="2020-11-25T16:05:17Z" data-provider="dataSupplier" finished-at="2020-11-25T16:06:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=venkata.kopparapu@pegs.com, Special and offer code=CopperComplimentary, Address=JNTURoad, FirstName=Test, Enterzipcode=500085, Address2=NearMangeeraMall, EnterCurrency=USD, CallCenterUser=Test, roomtype=Standard Suite, Enterrooms=1 rooms, Cardname=test, Entercountry=India, EnterLanguage=Svenska, Entercity=Hyderabad, Numberoncard=4111111111111111, Adults=1 adults, LastName=Test, Children=1 children, Enterstate=Telangana, Enterphonenum=1234567890}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flow -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86]" name="getResult" is-config="true" duration-ms="28186" started-at="2020-11-25T16:06:53Z" finished-at="2020-11-25T16:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Flow status=SUCCESS method=TC_Mobile_Modify_Email.Flow(java.util.HashMap)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="flow(java.util.HashMap)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86]" name="flow" duration-ms="2295" started-at="2020-11-25T16:07:21Z" data-provider="dataSupplier" finished-at="2020-11-25T16:07:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=venkata.kopparapu@pegs.com, Special and offer code=CopperComplimentary, Address=JNTURoad, FirstName=Test, Enterzipcode=500085, Address2=NearMangeeraMall, EnterCurrency=USD, CallCenterUser=Test, roomtype=Standard Suite, Enterrooms=1 rooms, Cardname=test, Entercountry=India, EnterLanguage=Svenska, Entercity=Hyderabad, Numberoncard=4111111111111111, Adults=1 adults, LastName=Test, Children=1 children, Enterstate=Telangana, Enterphonenum=1234567890}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//a[contains(text(),'Change reservation')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[contains(text(),'Change reservation')]' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.66)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K1SDGBA', ip: '192.168.43.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61106}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.66, webStorageEnabled: true}
+Session ID: fddd2df260d69c12236458529b2d7ccf
+*** Element info: {Using=xpath, value=(//a[contains(text(),'Change reservation')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//a[contains(text(),'Change reservation')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[contains(text(),'Change reservation')]' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.66)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K1SDGBA', ip: '192.168.43.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61106}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 87.0.4280.66, webStorageEnabled: true}
+Session ID: fddd2df260d69c12236458529b2d7ccf
+*** Element info: {Using=xpath, value=(//a[contains(text(),'Change reservation')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at com.tt.MB.Mobile_Modify_Email.change_reservation(Mobile_Modify_Email.java:123)
+	at com.tt.MB_Test.TC_Mobile_Modify_Email.flow(TC_Mobile_Modify_Email.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flow -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86]" name="getResult" is-config="true" duration-ms="997" started-at="2020-11-25T16:07:24Z" finished-at="2020-11-25T16:07:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=flow status=FAILURE method=TC_Mobile_Modify_Email.flow(java.util.HashMap)[pri:0, instance:com.tt.MB_Test.TC_Mobile_Modify_Email@64bfbc86] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.tt.MB_Test.TC_Mobile_Modify_Email -->
+      <class name="com.tt.admin.TC_Brand_Selection">
+        <test-method status="PASS" signature="brandSelection(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Brand_Selection@64bf3bbf]" name="brandSelection" duration-ms="74816" started-at="2020-11-25T16:03:54Z" data-provider="dataSupplier" finished-at="2020-11-25T16:05:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExistingPropetyName=TTQAPOMPRJECT, SelectBrand=Sachin Test Brand}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandSelection -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tt.admin.TC_Brand_Selection@64bf3bbf]" name="getResult" is-config="true" duration-ms="447" started-at="2020-11-25T16:05:08Z" finished-at="2020-11-25T16:05:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=brandSelection status=SUCCESS method=TC_Brand_Selection.brandSelection(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Brand_Selection@64bf3bbf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.tt.admin.TC_Brand_Selection -->
+      <class name="com.tt.admin.TC_Select_Property">
+        <test-method status="PASS" signature="selProperty(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Select_Property@192b07fd]" name="selProperty" duration-ms="7220" started-at="2020-11-25T16:05:09Z" data-provider="dataSupplier" finished-at="2020-11-25T16:05:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExistingPropetyName=TTQAPOMPRJECT, SelectBrand=Sachin Test Brand}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selProperty -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tt.admin.TC_Select_Property@192b07fd]" name="getResult" is-config="true" duration-ms="472" started-at="2020-11-25T16:05:16Z" finished-at="2020-11-25T16:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selProperty status=SUCCESS method=TC_Select_Property.selProperty(java.util.HashMap)[pri:0, instance:com.tt.admin.TC_Select_Property@192b07fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.tt.admin.TC_Select_Property -->
+    </test> <!-- tests -->
+  </suite> <!-- preserve-order Suite -->
+</testng-results>

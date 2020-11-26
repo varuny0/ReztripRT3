@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Failed suite [preserve-order Suite]]">
+  <parameter name="browser" value="chrome"/>
+  <test name="test1(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tt.admin.TC_CompoundAccessCodes">
+        <methods>
+          <include name="Beforem"/>
+          <include name="deleteLog"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tt.admin.TC_CompoundAccessCodes -->
+      <class name="com.tt.MB_Test.TC_Mobile_CompoundAccessCode">
+        <methods>
+          <include name="compound" invocation-numbers="0"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.tt.MB_Test.TC_Mobile_CompoundAccessCode -->
+    </classes>
+  </test> <!-- test1(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [preserve-order Suite]] -->

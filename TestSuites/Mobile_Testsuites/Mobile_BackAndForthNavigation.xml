@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5" >	
+<test name="tests" >
+        <parameter name="browser" value="chrome"/>
+        
+    <classes>     
+
+			 <!--  <class name="com.tt.admin.TC_OfferCode_Dates" />  --> 
+			<class name="com.tt.MB_Test.TC_Mobile_BackAndForthNavigation"/>  
+     
+        </classes>
+	</test>
+</suite>
+

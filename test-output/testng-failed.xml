@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [preserve-order Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tt.admin.TC_Admin_Login">
+        <methods>
+          <include name="getResult"/>
+          <include name="Beforem"/>
+          <include name="deleteLog"/>
+          <include name="driverclose"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tt.admin.TC_Admin_Login -->
+      <class name="com.tt.admin.TC_Select_Property">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.tt.admin.TC_Select_Property -->
+      <class name="com.tt.MB_Test.TC_Mobile_Modify_Email">
+        <methods>
+          <include name="getResult"/>
+          <include name="flow" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.tt.MB_Test.TC_Mobile_Modify_Email -->
+      <class name="com.tt.admin.TC_Brand_Selection">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.tt.admin.TC_Brand_Selection -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [preserve-order Suite] -->

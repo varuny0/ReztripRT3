@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  YankeeModify</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>YankeeModify</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/8</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 25 16:36:13 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>13 seconds (13143 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.BE.TC_IBE_Config_Yankee.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_IBE_Config_Yankee<br>Parameters: [TestResult name=Flow status=FAILURE method=TC_IBE_Config_Yankee.Flow(java.util.HashMap)[pri:0, instance:com.tt.BE.TC_IBE_Config_Yankee@2b9627bc] output={null}]</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 19708, moz:profile: C:\Users\TT095\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25240bd9-3bd8-4dea-a101-93ac5e9e2247
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.tt.utility.BaseTest.captureScreenShot(BaseTest.java:232)
+	at com.tt.utility.BaseTest.getResult(BaseTest.java:172)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873168630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace873168630'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 19708, moz:profile: C:\Users\TT095\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 25240bd9-3bd8-4dea-a101-93ac5e9e2247
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.tt.utility.BaseTest.captureScreenShot(BaseTest.java:232)
+	at com.tt.utility.BaseTest.getResult(BaseTest.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.BE.TC_IBE_Config_Yankee@2b9627bc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.admin.TC_Admin_Login.getResult()'><b>getResult</b><br>Test class: com.tt.admin.TC_Admin_Login</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Admin_Login@1d16f93d</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Brand_Selection.getResult()'><b>getResult</b><br>Test class: com.tt.admin.TC_Brand_Selection</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Brand_Selection@61f8bee4</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Select_Property.getResult()'><b>getResult</b><br>Test class: com.tt.admin.TC_Select_Property</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Select_Property@67b92f0a</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_YankeeModify</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_YankeeModify</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_YankeeModify</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_YankeeModify</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.getResult()'><b>getResult</b><br>Test class: com.tt.BE.TC_YankeeModify</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Admin_Login.driverclose()'><b>driverclose</b><br>Test class: com.tt.admin.TC_Admin_Login</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.BE.TC_IBE_Config_Yankee.Flow()'><b>Flow</b><br>Test class: com.tt.BE.TC_IBE_Config_Yankee<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address=499 Maple St., FirstName=Test, Enterzipcode=27540, Address2=Holly Springs, EnterCurrency=USD, roomtype=Standard Suite, Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=yankee, Entercity=Newyork, Numberoncard=4111111111111111, ExistingPropetyName=QA2 Sachin 6-2018, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.tt.BE.TC_IBE_Config_Yankee.Flow(TC_IBE_Config_Yankee.java:59)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2032399795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032399795'><pre>junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at com.tt.BE.TC_IBE_Config_Yankee.Flow(TC_IBE_Config_Yankee.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.tt.BE.TC_IBE_Config_Yankee@2b9627bc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.Bookingroom_ChangeReservation()'><b>Bookingroom_ChangeReservation</b><br>Test class: com.tt.BE.TC_YankeeModify<br>Test method: Booking room after clicking Change Reservation<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address=499 Maple St., FirstName=Test, Enterzipcode=27540, Address2=Holly Springs, EnterCurrency=USD, roomtype=Standard Suite, Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=yankee, Entercity=Newyork, Numberoncard=4111111111111111, ExistingPropetyName=QA2 Sachin 6-2018, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.ChangeReservation_Ratecheck()'><b>ChangeReservation_Ratecheck</b><br>Test class: com.tt.BE.TC_YankeeModify<br>Test method: Change Reservation<br>Parameters: {offer=coppercomplimentry, RoomType=Times Square View Two Queen Room, Category=Fixed Rate Plan, EnterValue=All, Rateplan=Stay2NightsAndGet25PerCentOFFBAR, RoomRate=340}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.CountComparision()'><b>CountComparision</b><br>Test class: com.tt.BE.TC_YankeeModify<br>Test method: Rooms Count After Room Reservation<br>Parameters: {offer=coppercomplimentry, RoomType=Times Square View Two Queen Room, Category=Fixed Rate Plan, EnterValue=All, Rateplan=Stay2NightsAndGet25PerCentOFFBAR, RoomRate=340}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.Flow()'><b>Flow</b><br>Test class: com.tt.BE.TC_YankeeModify<br>Test method: Booking Room in Booking Engine<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address=499 Maple St., FirstName=Test, Enterzipcode=27540, Address2=Holly Springs, EnterCurrency=USD, roomtype=Standard Suite, Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=yankee, Entercity=Newyork, Numberoncard=4111111111111111, ExistingPropetyName=QA2 Sachin 6-2018, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Brand_Selection.brandSelection()'><b>brandSelection</b><br>Test class: com.tt.admin.TC_Brand_Selection<br>Parameters: {ExistingPropetyName=TTQAPOMPRJECT, SelectBrand=Sachin Test Brand}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Brand_Selection@61f8bee4</td></tr>
+<tr>
+<td title='com.tt.BE.TC_YankeeModify.rategrid()'><b>rategrid</b><br>Test class: com.tt.BE.TC_YankeeModify<br>Test method: Rooms Count Before Room Reservation<br>Parameters: {offer=coppercomplimentry, RoomType=Times Square View Two Queen Room, Category=Fixed Rate Plan, EnterValue=All, Rateplan=Stay2NightsAndGet25PerCentOFFBAR, RoomRate=340}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.BE.TC_YankeeModify@4f970963</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Select_Property.selProperty()'><b>selProperty</b><br>Test class: com.tt.admin.TC_Select_Property<br>Parameters: {ExistingPropetyName=TTQAPOMPRJECT, SelectBrand=Sachin Test Brand}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Select_Property@67b92f0a</td></tr>
+<tr>
+<td title='com.tt.admin.TC_Admin_Login.test()'><b>test</b><br>Test class: com.tt.admin.TC_Admin_Login<br>Parameters: {UserName=harshini, Password=travel@123}</td>
+<td></td>
+<td>0</td>
+<td>com.tt.admin.TC_Admin_Login@1d16f93d</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1512 @@
+<html>
+<head>
+<title>TestNG:  DPR</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DPR</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/32/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 07 16:05:11 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>2765 seconds (2765592 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_AllNights()'><b>AddNewDPR_Discounttype_FlatAmount_AllNights</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_FlatAmount.java:373)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892531480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892531480'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_FlatAmount.java:373)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_AllNights()'><b>AddNewDPR_Discounttype_FlatAmount_AllNights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_Flat_Then_Percentage.java:367)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace640617224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640617224'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_Flat_Then_Percentage.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>94</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_AllNights()'><b>AddNewDPR_Discounttype_FlatAmount_AllNights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_Percentage_Then_Flat.java:360)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913400302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913400302'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_AllNights(TC_DPRTestCases_Percentage_Then_Flat.java:360)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>95</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_AllDays</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays(TC_DPRTestCases_Flat_Then_Percentage.java:107)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424876410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424876410'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays(TC_DPRTestCases_Flat_Then_Percentage.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_AllDays</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays(TC_DPRTestCases_Percentage_Then_Flat.java:106)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267580296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267580296'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays(TC_DPRTestCases_Percentage_Then_Flat.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_particularDay</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_FlatAmount.java:213)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043822951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1043822951'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_FlatAmount.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>100</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_particularDay</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_Flat_Then_Percentage.java:202)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace889425821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889425821'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_Flat_Then_Percentage.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_particularDay</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_Percentage_Then_Flat.java:201)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1651286370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1651286370'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_DOW_particularDay(TC_DPRTestCases_Percentage_Then_Flat.java:201)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>162</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_First_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_First_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_FlatAmount.java:253)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1224970135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224970135'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_FlatAmount.java:253)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>103</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_First_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_First_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_Flat_Then_Percentage.java:244)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace702440682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace702440682'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_Flat_Then_Percentage.java:244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>95</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_First_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_First_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_Percentage_Then_Flat.java:242)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059529017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059529017'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_First_N_Nights(TC_DPRTestCases_Percentage_Then_Flat.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>194</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_Last_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_FlatAmount.java:292)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061774578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1061774578'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_FlatAmount.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>94</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_Last_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_Flat_Then_Percentage.java:285)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1062599950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1062599950'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_Flat_Then_Percentage.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>121</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights()'><b>AddNewDPR_Discounttype_FlatAmount_Last_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_Percentage_Then_Flat.java:281)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180922793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180922793'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_Last_N_Nights(TC_DPRTestCases_Percentage_Then_Flat.java:281)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>145</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_NthNight()'><b>AddNewDPR_Discounttype_FlatAmount_NthNight</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_FlatAmount.java:332)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1046160944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1046160944'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_FlatAmount.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>99</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_NthNight()'><b>AddNewDPR_Discounttype_FlatAmount_NthNight</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_Flat_Then_Percentage.java:326)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322268566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322268566'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_Flat_Then_Percentage.java:326)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>98</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_NthNight()'><b>AddNewDPR_Discounttype_FlatAmount_NthNight</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_Percentage_Then_Flat.java:320)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1464897487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1464897487'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.AddNewDPR_Discounttype_FlatAmount_NthNight(TC_DPRTestCases_Percentage_Then_Flat.java:320)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_AllNights()'><b>AddNewDPR_Discounttype_Percentage_AllNights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_AllNights(TC_DPRTestCases_Percentage.java:377)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977233651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977233651'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_AllNights(TC_DPRTestCases_Percentage.java:377)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_DOW_particularDay()'><b>AddNewDPR_Discounttype_Percentage_DOW_particularDay</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_DOW_particularDay(TC_DPRTestCases_Percentage.java:204)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783898210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783898210'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_DOW_particularDay(TC_DPRTestCases_Percentage.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>103</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_First_N_Nights()'><b>AddNewDPR_Discounttype_Percentage_First_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_First_N_Nights(TC_DPRTestCases_Percentage.java:244)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358359319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358359319'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_First_N_Nights(TC_DPRTestCases_Percentage.java:244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>99</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_Last_N_Nights()'><b>AddNewDPR_Discounttype_Percentage_Last_N_Nights</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_Last_N_Nights(TC_DPRTestCases_Percentage.java:284)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace118112620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace118112620'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_Last_N_Nights(TC_DPRTestCases_Percentage.java:284)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>95</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_NthNight()'><b>AddNewDPR_Discounttype_Percentage_NthNight</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_NthNight(TC_DPRTestCases_Percentage.java:336)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1294906566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1294906566'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_NthNight(TC_DPRTestCases_Percentage.java:336)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNewDPR_Using_Include_IPAddresses()'><b>AddNewDPR_Using_Include_IPAddresses</b><br>Test class: com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNewDPR_Using_Include_IPAddresses(TC_DPR_Include_Exclude_IP_Geographic.java:234)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace843332441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843332441'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNewDPR_Using_Include_IPAddresses(TC_DPR_Include_Exclude_IP_Geographic.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic@ff5b51f</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNew_DPR_STAY_CONDITIONS_Black_out_Date()'><b>AddNew_DPR_STAY_CONDITIONS_Black_out_Date</b><br>Test class: com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNew_DPR_STAY_CONDITIONS_Black_out_Date(TC_DPR_Include_Exclude_IP_Geographic.java:131)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914322971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914322971'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.AddNew_DPR_STAY_CONDITIONS_Black_out_Date(TC_DPR_Include_Exclude_IP_Geographic.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic@ff5b51f</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.Copy_DPR_Errors()'><b>Copy_DPR_Errors</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.Copy_DPR_Errors(TC_DPRTestCases_FlatAmount.java:448)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816870841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816870841'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.Copy_DPR_Errors(TC_DPRTestCases_FlatAmount.java:448)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW()'><b>VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Test method: Verify in BE<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address= 499 Maple St. , FirstName=Test, Enterzipcode=27540, Address2= Holly Springs, EnterCurrency=USD, roomtype=Times Square View Two Queen Room , Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=standard, Entercity=Newyork, Numberoncard=4111111111111111, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_FlatAmount.java:162)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636487850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636487850'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_FlatAmount.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW()'><b>VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW</b><br>Test class: com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage<br>Test method: Verify in BE<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address= 499 Maple St. , FirstName=Test, Enterzipcode=27540, Address2= Holly Springs, EnterCurrency=USD, roomtype=Times Square View Two Queen Room , Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=standard, Entercity=Newyork, Numberoncard=4111111111111111, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_Flat_Then_Percentage.java:152)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688271638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688271638'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_Flat_Then_Percentage.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>81</td>
+<td>com.tt.admin.TC_DPRTestCases_Flat_Then_Percentage@4566e5bd</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW()'><b>VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat<br>Test method: Verify in BE<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address= 499 Maple St. , FirstName=Test, Enterzipcode=27540, Address2= Holly Springs, EnterCurrency=USD, roomtype=Times Square View Two Queen Room , Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=standard, Entercity=Newyork, Numberoncard=4111111111111111, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_Percentage_Then_Flat.java:151)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195188180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195188180'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat.VerfiyinBE_AddNewDPR_Discounttype_FlatAmount_DOW(TC_DPRTestCases_Percentage_Then_Flat.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>83</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage_Then_Flat@1ed4004b</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.VerfiyinBE_AddNewDPR_Discounttype_Percentage_DOW()'><b>VerfiyinBE_AddNewDPR_Discounttype_Percentage_DOW</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Test method: Verify in BE<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address= 499 Maple St. , FirstName=Test, Enterzipcode=27540, Address2= Holly Springs, EnterCurrency=USD, roomtype=Times Square View Two Queen Room , Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=standard, Entercity=Newyork, Numberoncard=4111111111111111, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Percentage.VerfiyinBE_AddNewDPR_Discounttype_Percentage_DOW(TC_DPRTestCases_Percentage.java:154)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638099407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638099407'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-K1SDGBA&apos;, ip: &apos;192.168.100.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\TT095\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53197}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 84.0.4147.105, webStorageEnabled: true}
+Session ID: da19636c0c0f25ce04d7311e0b23d4d3
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Times Square View Two Queen Room&apos;) and @class=&apos;rooms-list-title ng-binding&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor38.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.room_type(ClassicFlow_AvailPage.java:803)
+	at com.tt.BE.pom.ClassicFlow_AvailPage.ReuseMethodsforDPRcheckavailabitlity(ClassicFlow_AvailPage.java:1191)
+	at com.tt.admin.TC_DPRTestCases_Percentage.VerfiyinBE_AddNewDPR_Discounttype_Percentage_DOW(TC_DPRTestCases_Percentage.java:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>85</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Exclude_IPAddress()'><b>VerfiyinBE_AddNewDPR_Using_Exclude_IPAddress</b><br>Test class: com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Exclude_IPAddress(TC_DPR_Include_Exclude_IP_Geographic.java:271)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811696413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace811696413'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Exclude_IPAddress(TC_DPR_Include_Exclude_IP_Geographic.java:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic@ff5b51f</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Include_IPAddress()'><b>VerfiyinBE_AddNewDPR_Using_Include_IPAddress</b><br>Test class: com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic<br>Test method: Verify in BE<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address= 499 Maple St. , FirstName=Test, Enterzipcode=27540, Address2= Holly Springs, EnterCurrency=USD, roomtype=Times Square View Two Queen Room , Enterrooms=1, Cardname=test, Entercountry=United States, Username=adminqa, FlowName=standard, Entercity=Newyork, Numberoncard=4111111111111111, LastName=Test, Enterstate=Texas, Enterphonenum=1234567890, Password=bookingissoeasy}</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: handle=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Include_IPAddress(TC_DPR_Include_Exclude_IP_Geographic.java:166)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431535171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431535171'><pre>java.lang.NullPointerException: null value in entry: handle=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
+	at com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic.VerfiyinBE_AddNewDPR_Using_Include_IPAddress(TC_DPR_Include_Exclude_IP_Geographic.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tt.admin.TC_DPR_Include_Exclude_IP_Geographic@ff5b51f</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.VerifyDPR_In_CallCenter()'><b>VerifyDPR_In_CallCenter</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {Email=test@test.com, Special and offer code=CopperComplimentary, Address=JNTURoad, FirstName=Test, Enterzipcode=500085, Address2=NearMangeeraMall, EnterCurrency=USD, CallCenterUser=Test, roomtype=Times Square View Two Queen Room, Enterrooms=1 rooms, Cardname=test, Entercountry=India , Entercity=Hyderabad, Numberoncard=4111111111111111, Adults=1 adults , LastName=Test, Children=1 children , RateType=BAR, Enterstate=Telangana , Enterphonenum=1234567890}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.VerifyDPR_In_CallCenter(TC_DPRTestCases_FlatAmount.java:418)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499911608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499911608'><pre>java.lang.NullPointerException
+	at com.tt.admin.TC_DPRTestCases_FlatAmount.VerifyDPR_In_CallCenter(TC_DPRTestCases_FlatAmount.java:418)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_FlatAmount.AddNewDPR_Discounttype_FlatAmount_DOW_AllDays()'><b>AddNewDPR_Discounttype_FlatAmount_DOW_AllDays</b><br>Test class: com.tt.admin.TC_DPRTestCases_FlatAmount<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td></td>
+<td>61</td>
+<td>com.tt.admin.TC_DPRTestCases_FlatAmount@e45f292</td></tr>
+<tr>
+<td title='com.tt.admin.TC_DPRTestCases_Percentage.AddNewDPR_Discounttype_Percentage_DOW_AllDays()'><b>AddNewDPR_Discounttype_Percentage_DOW_AllDays</b><br>Test class: com.tt.admin.TC_DPRTestCases_Percentage<br>Parameters: {DOW_ALL=ALL, DOW_AnyDay=AnyDay, Percentage=10, FlatAmount=50, City=Hyderabad, RatePlan=BAR, ShortDescription=This is a DPR used to get discounts, Errors=Name for rule is missing.
+Code for rule is missing.
+Short Description for rule is missing.
+No per-day fixed or percent discounts provided for discounting; they are required.
+A rate rule needs either addons, a discount, or both. This rule has neither., SteadyFlatAmount=50, Continent=Asia, NthNight=2, State=Telangana, Country=India, SteadyDays=4, IPAddress=115.248.119.34, RuleCode=DPRSummer, RuleName=DPRDiscount, Precentage=10}</td>
+<td></td>
+<td>16</td>
+<td>com.tt.admin.TC_DPRTestCases_Percentage@25bbe1b6</td></tr>
+</table><p>
+</body>
+</html>

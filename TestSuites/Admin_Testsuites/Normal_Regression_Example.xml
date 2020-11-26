@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="preserve-order Suite" parallel="false" thread-count="5">
+
+ <test name="tests" >
+        <parameter name="browser" value="chrome"/>
+  <!--       
+        iexplorer  does not seem to work , use msedge
+		   Do not run <class name="com.tt.admi n.TC_Add_NewProperty" />    -->
+
+     	  <classes>
+			<!-- <class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" />
+			<class name="com.tt.admin.TC_Select_Property" />
+		   	<class name="com.tt.admin.TC_PropertyDefaults" />
+			<class name="com.tt.admin.TC_PropertyMaster" />
+			<class name="com.tt.admin.TC_Property_Branding" />
+			<class name="com.tt.admin.TC_Create_Property_Channel" />
+		
+		
+			<class name="com.tt.admin.TC_deleterooms" />
+		
+			<class name="com.tt.admin.TC_AboutPRoom" />
+		
+			<class name="com.tt.admin.TC_AboutPDining" />
+			<class name="com.tt.admin.TC_AboutNearByAirPort" />
+			<class name="com.tt.admin.TC_AboutNearAttractions" />
+			<class name="com.tt.admin.TC_TaxesAndFees" />
+			<class name="com.tt.admin.TC_Amenties" />
+		
+			<class name="com.tt.admin.TC_PaymentGateway" />
+			<class name="com.tt.admin.TC_CallCenterSettings" />
+			<class name="com.tt.admin.TC_GuestPQ" />   
+			
+		msEdge for some reason after landing on the bedtype selection page redirects browser to list page	
+		 	<class name="com.tt.admin.TC_Create_RoomType" />  
+		 	<class name="com.tt.admin.TC_RoomHierarchy" />  
+			<class name="com.tt.admin.TC_Policies" />
+			<class name="com.tt.admin.TC_SmartPolicies" />
+			<class name="com.tt.admin.TC_Add_Ons" />   
+			
+			msEdge for some reason is un able to interact with rate plan categoris page
+	 		<class name="com.tt.admin.TC_RatePlanCategories" />
+			<class name="com.tt.admin.TC_RateGrid" />
+			<class name="com.tt.admin.TC_AddNewRatePlan" /> 
+			<class name="com.tt.admin.TC_ManageAccessCode" />   -->
+			
+			
+		</classes>   
+	</test>  
+	
+	 <test name="Yankee New,Modify,Cancel Booking">
+		<parameter name="browser" value="msedge" />
+		
+	 <classes>
+		
+		
+		 <class name="com.tt.BE.TC_IBE_Config_Yankee" />
+		 <class name="Reusable_BE.TC_YankeeFlow_New_Modify_CancelBooking" />
+
+		</classes>   
+		
+	</test> 
+	
+	  <test name="Standard New,Modify,Cancel Booking">
+		<parameter name="browser" value="msedge" />
+		
+	<classes>
+			<class name="com.tt.BE.TC_IBE_Config_Standard" /> 
+			<class name="Reusable_BE.TC_Standard_New_Modfiy_CancelBooking" /> 
+		</classes>     ran into cookie overflow in FF
+		
+	</test>     
+	
+	
+<!--	 <test name="MultiRoomBooking">
+		<parameter name="browser" value="msedge" />
+ 		     <classes>
+		    <class name="com.tt.BE.TC_Multiroom" />   
+		</classes>  ran into cookie overflow in FF
+	</test>    
+	
+	<test name="Booking special Rates and PromoURLBooking	">
+		<parameter name="browser" value="msedge" />
+	 <classes>
+		  <class name="com.tt.admin.TC_SpecialRate_dates" />
+			<class name="com.tt.BE.TC_BookingAtSpecialRates" />
+			 <class name="com.tt.BE.TC_PromoURLBooking" />  
+		</classes>  
+	</test>   -->
+
+<!--	<test name="Booking with AccessCode	">
+		<parameter name="browser" value="msedge" />
+		 <classes>
+			 <class name="com.tt.admin.TC_OfferCode_Dates" />
+			<class name="Reusable_BE.TC_AccessCode_Booking" />  
+		</classes>   
+	</test>  
+	
+	
+    <test name="CallCenter New,Modify,Cancel Booking">
+		<parameter name="browser" value="msedge" />
+
+		 <classes>
+			<class name="Reusable_BE.TC_CallCenter_New_Modify_CancelBooking" />
+		</classes>   
+
+	</test>  
+	
+	   <test name="Mobile ew,Modify,Cancel Booking">
+		<parameter name="browser" value="msedge" />
+
+	 <classes>
+			<class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking" />
+		</classes>   
+
+	</test>    -->
+	
+	
+
+</suite> 
