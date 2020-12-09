@@ -397,7 +397,7 @@ public class ClassicFlow_ReservationDetailsPage extends ClasicFlow {
 
 		}
 
-		if (verify_taxesandfees.isDisplayed()) 
+		/*if (verify_taxesandfees.isDisplayed()) 
 		{
 			String taxes=verify_taxesandfees.getText();
 			//System.out.println("Text obtained is"+taxes);
@@ -417,7 +417,7 @@ public class ClassicFlow_ReservationDetailsPage extends ClasicFlow {
 			logger.error("taxesandfees is not present");
 			test.log(Status.FAIL, "taxesandfees Element is not present");
 
-		}
+		}*/
 
 		if (verify_grandtotal.isDisplayed())
 		{

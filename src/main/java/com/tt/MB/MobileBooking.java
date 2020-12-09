@@ -724,7 +724,7 @@ public class MobileBooking extends BaseTest
 	{
 		SeleniumRepo.waitForElementPresent(Menu_Button);
 		Date date1 = new Date();
-		date1.setDate(date1.getDate() + 1);
+		date1.setDate(date1.getDate() +30);
 		
 		SimpleDateFormat df1 = new SimpleDateFormat("dd");
 		String arrivaldate = df1.format(date1);
@@ -743,7 +743,7 @@ public class MobileBooking extends BaseTest
 	public void departuredate() throws ParseException
 	{
 		Date date2 = new Date();
-		date2.setDate(date2.getDate() + 3);
+		date2.setDate(date2.getDate() +5);
 		
 		SimpleDateFormat df1 = new SimpleDateFormat("dd");
 		String departuredate = df1.format(date2);

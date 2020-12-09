@@ -80,7 +80,7 @@ public class TC_PropertyDefaults extends BaseTest
 			 
 			 propDef.propDefaultCurrency("Cordoba Oro");
 			 
-			 propDef.propDefCurrencies("Euro;Pound Sterling;United States Dollar");
+			 //propDef.propDefCurrencies("Euro;Pound Sterling;United States Dollar");
 
 			 propDef.propDefTaxDisplay("enable");
 			 
@@ -122,8 +122,8 @@ public class TC_PropertyDefaults extends BaseTest
 			 //propDef.propDefAddonsInPGDeposit("enable");
 			// propDef.propDefTaxInPGDeposit("enable");
 			 //propDef.propDefSmartRatePlan(String);
-			 //propDef.propDefDerbySoftConnection("enable");
-			 //propDef.propDefWIHPConnection(String);
+			 propDef.propDefDerbySoftConnection("enable");
+			// propDef.propDefWIHPConnection(String);
 			 
 			 //Create a method that allows a selection of a loylaty program
 			 propDef.propDefLoyaltyProgram("enable");
@@ -132,7 +132,7 @@ public class TC_PropertyDefaults extends BaseTest
 			 
 			// propDef.propDefCOMPRatePlan("disable");
 			 
-			 //propDef.propDefUplift("enable");
+			 propDef.propDefUplift("enable");
 			 
 			 //propDef.CompoundAccess_RadioButton("disable");
 			 
@@ -140,11 +140,11 @@ public class TC_PropertyDefaults extends BaseTest
 
 			// propDef.propDefFacebookPageId("Face BoOOOOk");
 			 
-			 propDef.propDefRateCalendarRatePlan("BAR");
-			 
-			 propDef.propDefTripConnectShowPriceRatePlan("per person");
-			 
-			 propDef.propDefTripAdvisorInstantBookingRatePlan("Deep");
+//			 propDef.propDefRateCalendarRatePlan("BAR");
+//			 
+//			 propDef.propDefTripConnectShowPriceRatePlan("per person");
+//			 
+//			 propDef.propDefTripAdvisorInstantBookingRatePlan("Deep");
 
 //			 propDef.propDefFlipToEnabled("disable");
 //

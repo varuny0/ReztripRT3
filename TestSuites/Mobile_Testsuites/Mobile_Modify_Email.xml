@@ -5,11 +5,11 @@
 	<test name="tests">
 		<parameter name="browser" value="chrome" />
 
-		<classes>
+		<classes> 
 
-			<class name="com.tt.admin.TC_Admin_Login" />
-			<class name="com.tt.admin.TC_Brand_Selection" />
-			<class name="com.tt.admin.TC_Select_Property" />
+			  <class name="com.tt.admin.TC_Admin_Login" />
+			<class name="com.tt.admin.TC_Brand_Selection" /> 
+			<!-- <class name="com.tt.admin.TC_Select_Property" /> -->
 			<class name="com.tt.MB_Test.TC_Mobile_Modify_Email" />
 
 		</classes>

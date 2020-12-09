@@ -74,12 +74,12 @@ public class TC_PropertyMaster extends BaseTest {
 			propMast.propMasterPhoneMain("3", "334", "3458987");
 			propMast.propMasterPhoneReservation("2", "121", "3457123");
 			propMast.propMasterFax("0", "987", "0934777");
-			propMast.propMasterWebsiteUrl("www.hugsrus.com");
+			propMast.propMasterWebsiteUrl("www.rt3regtest.com");
 			
-			propMast.propMasterPrimaryEmail("hello@travel.com");
-			propMast.propMasterPropNotificationEmail("heydeer.@gmail.com");
-			propMast.propMasterIntgNotificationEmail("yng@yahoo.com");
-			propMast.propMasterAddEmails("harshini.vemuri@traveltripper.com, yugiho@aol.com");
+			propMast.propMasterPrimaryEmail("venkata.kopparapu@pegs.com");
+			propMast.propMasterPropNotificationEmail("venkata.kopparapu@pegs.com");
+			propMast.propMasterIntgNotificationEmail("venkat@yahoo.com");
+			propMast.propMasterAddEmails("venkata.kopparapu@pegs.com");
 
 
 			propMast.propMasterNumOfRooms("45");
@@ -102,7 +102,7 @@ public class TC_PropertyMaster extends BaseTest {
 			propMast.propMasterLongDes("Sweet buffte crabs, sweet sweet jesuse");
 			
 			
-			propMast.propMasterGdsPromoText("Hi Kids");
+			//propMast.propMasterGdsPromoText("Hi Kids");
 
 
 

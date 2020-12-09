@@ -8,7 +8,7 @@
 
 <class name="com.tt.admin.TC_Admin_Login" />
 <class name="com.tt.admin.TC_Brand_Selection"/> 
-<class name="com.tt.admin.TC_Select_Property"/>  
+<class name="com.tt.admin.TC_Select_Property"/>   
 <class name="Reusable_BE.TC_Mobile_New_Modify_CancelBooking"/>
 
      

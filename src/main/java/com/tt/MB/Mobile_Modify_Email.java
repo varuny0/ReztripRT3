@@ -1,11 +1,11 @@
 package com.tt.MB;
 
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.Status;
 import com.tt.utility.BaseTest;
 import com.tt.utility.SeleniumRepo;
@@ -87,13 +87,13 @@ public class Mobile_Modify_Email extends BaseTest {
 	public WebElement Confirmation_code;
 
 
-
-
-
-
 	public void mail_conf() {
 		ExplicitWait(mail_conf);
+		
+		String confcode = MobileBooking.code;
+		System.out.println("The confirmation code is" +confcode);
 		if(mail_conf.isDisplayed()) {
+			
 			mail_conf.click();
 
 			System.out.println("Able to click on mail link");
@@ -104,11 +104,12 @@ public class Mobile_Modify_Email extends BaseTest {
 			Assert.assertFalse(false, "Unable to click on mail link");
 		}
 	}
-	public void change_click() {
-
+	public void change_click() throws InterruptedException {
+		ExplicitWait(change_click);
 		if(change_click.isDisplayed()){
-			change_click.click();
-
+			//change_click.click();
+			Javascriptexecutor(change_click);
+			Thread.sleep(2000);
 			System.out.println("Able to click on change the reservation link");
 			Assert.assertTrue(true, "Able to click on change the reservation link");
 		}
@@ -117,12 +118,23 @@ public class Mobile_Modify_Email extends BaseTest {
 			Assert.assertFalse(false, "Unable to click on change reservation link");
 		}
 	}
+	
+	public void BEpage() throws InterruptedException {
+		Thread.sleep(2000);
+		
+		List<String> tabs1 = windowidList();
+		SeleniumRepo.driver.switchTo().window(tabs1.get(2));
+		
+		System.out.println("url is"+SeleniumRepo.driver.getTitle());
+	}
 
-	public void change_reservation() {
-		SeleniumRepo.waitForPageLoaded();
+	public void change_reservation() throws InterruptedException {
+	
+		ExplicitWait(change_reservation);
 		if(change_reservation.isDisplayed()) {
-			change_reservation.click();
-
+			
+			Thread.sleep(1000);
+			Javascriptexecutor(change_reservation);
 			System.out.println("clicked on change reservation button");
 			Assert.assertTrue(true, "clicked on change reservation button");
 		}
@@ -154,9 +166,7 @@ public class Mobile_Modify_Email extends BaseTest {
 		if(room_selection.isDisplayed()) {
 
 			String price = SeleniumRepo.driver.findElement(By.xpath("//span[@class='rooms_price']")).getText();
-
 			System.out.println(""+roomtype+" price is "+price+"");
-
 			room_selection.click();
 
 			System.out.println("selected the "+roomtype);		
@@ -165,7 +175,6 @@ public class Mobile_Modify_Email extends BaseTest {
 
 	public void booknow() {
 		if(BookNow.isDisplayed()) {
-
 			BookNow.click();
 
 			System.out.println("clicked on booknow button");
@@ -186,10 +195,8 @@ public class Mobile_Modify_Email extends BaseTest {
 		Assert.assertFalse(false, "Unable to clicked on confirm details");
 	}
 
-
 	public void CardNumber(String Numberoncard)
 	{
-
 		if (CardNumber.isDisplayed())
 		{
 			Javascriptexecutor(CardNumber);
@@ -352,7 +359,6 @@ public class Mobile_Modify_Email extends BaseTest {
 		}
 
 		SeleniumRepo.waitForPageLoaded();
-
 
 		ExplicitWait(Verify_thankyou);
 

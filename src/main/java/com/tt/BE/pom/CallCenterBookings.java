@@ -724,8 +724,8 @@ public class CallCenterBookings extends BaseTest
 
 	public void card_name(String Cardname) throws InterruptedException
 	{
-		SeleniumRepo.waitForElementPresent(Nameoncard);
-
+		//SeleniumRepo.waitForElementPresent(Nameoncard);
+		ExplicitWait(Nameoncard);
 		if(Nameoncard.isDisplayed())
 		{
 			Nameoncard.clear();

@@ -225,7 +225,7 @@ public class Mobile_Multi_langCurr extends BaseTest {
 		
 		Thread.sleep(1000);
 		Date date1 = new Date();
-		date1.setDate(date1.getDate()+2);
+		date1.setDate(date1.getDate()+3);
 		
 		SimpleDateFormat df1 = new SimpleDateFormat("dd");
 		String arrivaldate = df1.format(date1);
@@ -241,7 +241,7 @@ public class Mobile_Multi_langCurr extends BaseTest {
 	
 	public void departuredate()	{
 		Date date2 = new Date();
-		date2.setDate(date2.getDate() + 5);
+		date2.setDate(date2.getDate() + 4);
 		
 		SimpleDateFormat df1 = new SimpleDateFormat("dd");
 		String departuredate = df1.format(date2);

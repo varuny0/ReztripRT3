@@ -363,7 +363,7 @@ public class ClassicFlow_PaymentDetailsPage extends ClasicFlow {
 		}
 
 
-		if (verify_paymenttaxesandfees.isDisplayed()) {
+		/*if (verify_paymenttaxesandfees.isDisplayed()) {
 			String paymenttaxes=verify_paymenttaxesandfees.getText();
 			//System.out.println("Text obtained is" +paymenttaxes);
 			if(paymenttaxes.contains("TAXES AND FEES:"))
@@ -380,7 +380,7 @@ public class ClassicFlow_PaymentDetailsPage extends ClasicFlow {
 			//System.out.println("Element is not present");
 			logger.error("Expected value is not present");
 			test.log(Status.FAIL, "Element is not present");
-		}
+		}*/
 
 
 		if (verify_paymentgrandtotal.isDisplayed()) {

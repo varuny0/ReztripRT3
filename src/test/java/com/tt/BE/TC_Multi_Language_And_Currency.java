@@ -60,8 +60,8 @@ public class TC_Multi_Language_And_Currency extends BaseTest{
 			logger.info("Browser Opened");
 			
 			MultiLangCurr.GoToUrl();
-			MultiLangCurr.language_dropdown(Language);
-    		MultiLangCurr.Verify_Mybooking();
+			//MultiLangCurr.language_dropdown(Language);
+    		//MultiLangCurr.Verify_Mybooking();
 			MultiLangCurr.currencydropdown(EnterCurrency);
 			MultiLangCurr.arrival_date();
 			MultiLangCurr.depature_date();

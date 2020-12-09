@@ -355,7 +355,7 @@ public class Add_Ons extends BaseTest
 			}
 
 
-			SeleniumRepo.waitForElementPresent(Select_AvailablethroughSiteMinder);
+			/*SeleniumRepo.waitForElementPresent(Select_AvailablethroughSiteMinder);
 			if (Select_AvailablethroughSiteMinder.isDisplayed()) 
 			{
 				Select_AvailablethroughSiteMinder.click();
@@ -398,7 +398,7 @@ public class Add_Ons extends BaseTest
 						"Failed to Select RateTiger");
 				logger.error("Failed to to Select RateTiger");
 			}
-
+*/
 
 			SeleniumRepo.waitForElementPresent( Click_SaveButton);
 			if (SeleniumRepo.isElementPresent( Click_SaveButton)) 

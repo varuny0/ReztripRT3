@@ -283,10 +283,10 @@ public class ManageAccessCode extends BaseTest
 	public void Offer_default()
 	{
 		WebDriverWait wait=new WebDriverWait(SeleniumRepo.driver,50);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[6]/a")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[4]/a")));
 		
 		try {
-		WebElement element=SeleniumRepo.driver.findElement(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[6]/a"));
+		WebElement element=SeleniumRepo.driver.findElement(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[4]/a"));
 		Javascriptexecutor(element);
 		}
 		catch(Exception e)
@@ -294,7 +294,7 @@ public class ManageAccessCode extends BaseTest
 			System.out.println("offer Selected by defaultly");
 		}
 		SeleniumRepo.waitForPageLoaded();
-		WebElement code_status=SeleniumRepo.driver.findElement(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[6]"));
+		WebElement code_status=SeleniumRepo.driver.findElement(By.xpath("//*[@title='"+Accesscode+"']/following-sibling::td[4]"));
 		
 		if(code_status.getText().equalsIgnoreCase("Yes"))
 		{
